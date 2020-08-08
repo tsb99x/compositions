@@ -1,0 +1,7 @@
+version: '3'
+services:
+
+  ctop:
+    image: quay.io/vektorlab/ctop
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock:ro
