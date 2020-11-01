@@ -23,3 +23,4 @@ Index:
 * `Portainer <portainer.yml>`_ - That missing UI for Docker
 * `Ctop <ctop.yml>`_ - Htop for Docker (needs interactive shell)
 * `PostgreSQL <postgres.yml>`_ - Everyone heard of this RDBMS
+* `Kafka and KafDrop <kafka.yml>`_ - A sample config for Kafka
