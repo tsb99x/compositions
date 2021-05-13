@@ -1,0 +1,16 @@
+version: '3'
+services:
+
+  minio:
+    image: minio/minio
+    command: server /data
+    environment:
+      MINIO_ACCESS_KEY: access-key
+      MINIO_SECRET_KEY: secret-key
+    volumes:
+      - minio-data:/data
+    ports:
+      - '9000:9000' # Web-UI and S3 API
+
+volumes:
+  minio-data:
