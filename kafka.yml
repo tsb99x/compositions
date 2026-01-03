@@ -2,10 +2,10 @@ version: '3'
 services:
 
   zookeeper:
-    image: wurstmeister/zookeeper
+    image: docker.io/wurstmeister/zookeeper
 
   kafka:
-    image: wurstmeister/kafka
+    image: docker.io/wurstmeister/kafka
     hostname: kafka
     environment:
       KAFKA_ZOOKEEPER_CONNECT: zookeeper
@@ -30,7 +30,7 @@ services:
       - "8080:8080" # Web-UI
 
   kafdrop:
-    image: obsidiandynamics/kafdrop
+    image: docker.io/obsidiandynamics/kafdrop
     environment:
       KAFKA_BROKERCONNECT: kafka:29092
       JVM_OPTS: -Xms32M -Xmx64M
